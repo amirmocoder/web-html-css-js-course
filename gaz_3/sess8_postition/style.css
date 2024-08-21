@@ -1,0 +1,42 @@
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.parent-element {
+    background-color: rgb(131, 255, 131);
+    height: 100px;
+    padding: 20px;
+    position: relative;
+}
+.child-element {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+}
+.fix {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    background-color: yellow;
+}
+.center {
+    right: 0;
+    left: 0;
+    width: 150px;
+    margin: auto auto;
+    top: 0px;
+    bottom: 0;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* static positioned elements are not affected by the top, bottom, left, and right properties */
+/* relative Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. */
+/* absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling */
+/* sticky element toggles between relative and fixed */

@@ -19,18 +19,16 @@ div h3 {
 body div h3 {
     color: orange;
 }
-body > div > h3 {
-    color: orange
-}
+
 .details {
     font-size: 10px;
     color: gray;
 }
-.details-second {
-    font-size: 14px;;
+#list .details-second {
+    font-size: 14px;
+    color: #ff0000;
 }
-/* Control/Command + / */
-/* Email must be unique */
+
 #email-unique-id {
     color: brown;
 }

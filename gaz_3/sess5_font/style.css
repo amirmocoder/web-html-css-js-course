@@ -1,7 +1,9 @@
+/* defined a font */
 @font-face {
     font-family: 'fireStone';
     src: url('./font/FireStone.woff') format('woff');
 }
+/* standard format of a web form must be woff or woff2 nowadays */
 h1, h2, h3, h4, h5 {
     margin: 2px 0;
 }
@@ -13,30 +15,30 @@ h1, h2, h3, h4, h5 {
 .heading2 {
     color: purple;
     font-size: 30px;
-    font-family: fantasy;
+    font-family: 'fantasy';
 }
 .heading3 {
-    font-family: "Ubuntu";
+    font-family: 'Ubuntu','vladimir script';
 }
 .headingExternalFont100 {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: 100;
 }
 .headingExternalFont300 {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: 300
 }
 .headingExternalFontMedium {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: medium;
 }
 .headingRubik {
-    font-family: 'Rubik Iso', cursive;
+    font-family: 'Rubik Iso', 'cursive';
 }
-.haedingFireStone {
+.headingFireStone {
     font-family: 'fireStone';
     font-size: 40px;
 }
 .fontNotFound {
-    font-family: 'fireStone2', Roboto;
+    font-family: 'NotFound', Roboto;
 }
