@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.area{
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20vh;
+}
+.card{
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(40%);
+    height: calc(40%);
+    transition: 3s;
+}
+.card::before{
+    content: 'card';
+    font-family: jua;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin: 65%;
+}
+.card:nth-child(1){
+    background-color: crimson;
+    z-index: 1;
+    margin: 20vh;
+}
+
+.card:nth-child(2){
+    background-color: yellowgreen;
+    z-index: 2;
+    margin: 17.5vh;
+}
+.card:nth-child(3){
+    background-color: purple;
+    z-index: 3;
+    margin: 15vh;
+}
+.card:nth-child(4){
+    background-color: darkslategray;
+    z-index: 4;
+    margin: 12.5vh;
+}
+@media screen and (max-width: 700px) {
+    .card{
+        transition: 3s;
+    }
+    .card:nth-child(1){
+        background-color: darkslategray;
+        z-index: 4;
+        margin: 20vh;
+    }
+    .card:nth-child(2){
+        background-color: purple;
+        z-index: 3;
+        margin: 17.5vh;
+    }
+    .card:nth-child(3){
+        background-color: yellowgreen;
+        z-index: 2;
+        margin: 15vh;
+    }
+    .card:nth-child(4){
+        background-color: crimson;
+        z-index: 1;
+        margin: 12.5vh;
+    }
+}

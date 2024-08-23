@@ -1,7 +1,7 @@
 a {
     color: red;
 }
-/* Pseudo Class */
+/* pseudo Class */
 a:hover {
     color: rgb(63, 160, 2);
 }

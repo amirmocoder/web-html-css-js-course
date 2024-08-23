@@ -10,9 +10,11 @@ p::first-letter {
     font-size: 50px;
     padding-left: 20px;
 }
+/* styles the markers of list items */
 ::marker {
     color: red
 }
+/* makes the selected text */
 ::selection {
     color: black;
     background-color: yellow;
@@ -21,16 +23,18 @@ p::first-letter {
     width: 200px;
     position: relative;
 }
+/* makes an element before 'em */
 .image::before {
-    content: ' ';
+    content: '';
     width: 100%;
     height: 100%;
     background-color: black;
     position: absolute;
     opacity: 0.8;
 }
+/* makes an element after 'em */
 .image::after {
-    content: ' ';
+    content: '';
     width: 100%;
     height: 5px;
     left: 0;
