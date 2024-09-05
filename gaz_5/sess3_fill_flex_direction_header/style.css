@@ -1,9 +1,7 @@
 body {
     color: #131419;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: 'Inter', sans-serif;   
 }
-
 a {
     color: #131419;
     text-decoration: none;
@@ -35,7 +33,6 @@ a.link-primary svg {
 a.link-primary:hover svg {
     padding-left: 10px;
 }
-
 .navbar {
     display: flex;
     align-items: center;
