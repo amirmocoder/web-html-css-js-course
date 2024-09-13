@@ -27,6 +27,10 @@ a:hover{
     color: #5022c3;
 }
 
+.reset-hover:hover{
+    color: unset;
+}
+
 .navbar{
     position: relative;
     background-color: #fff;
@@ -84,14 +88,14 @@ a:hover{
     justify-content: center;
     font-weight: bold;
 }
-.login div:last-child button{
+.login div:last-child button , .start{
     background-color: #2D2F31;
-    color: #fff;
+    color: #fff ;
 }
 .login div:first-child button:hover , .btn:hover{
     background-color:rgba(23,57,83,.12);
 }
-.login div:last-child button:hover{
+.login div:last-child button:hover, .start:hover{
     background-color:#3e4143;
 }
 
@@ -204,6 +208,7 @@ a:hover{
     width: 100%;
     height: 500px;
     padding: 70px 15% 0 15%;
+    margin-bottom: 100px;
 }
 
 .links h3{
@@ -240,10 +245,59 @@ table span{
     border: 1px solid black;
 }
 
-.btn a:hover{
-    color: unset;
+.btn span, .start span{
+    font-weight: bold;
 }
 
-.btn span{
+.trailer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.trailer img{
+    margin-right: 5%;
+}
+
+.text-box{
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box h3{
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.text-box p{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.footer{
+    width: 100%;
+    height: 140px;
+    text-align: right;
+    padding-top: 80px;
+    background-color: #2D2F31;
+    color: #fff;
+    padding-right: 60px;
 }
