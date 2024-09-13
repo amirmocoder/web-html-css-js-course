@@ -4,7 +4,7 @@
 body{
     color: #2d2f31;
     font-family: "Open Sans", sans-serif;
-    background-color: #fafafa;
+    background-color: #FFFFFF;
     font-size: 14px;
 }
 
@@ -27,6 +27,7 @@ a:hover{
 }
 
 .navbar{
+    position: relative;
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -34,6 +35,7 @@ a:hover{
     height: 70px;
     padding: 0 24px;
     box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+    z-index: 999;
 }
 
 .menu, .login{
@@ -90,4 +92,105 @@ a:hover{
 }
 .login div:last-child button:hover{
     background-color:#3e4143;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header img{
+    position: relative;
+    z-index: 100;
+}
+
+.billboard{
+    position: absolute;
+    z-index: 101;
+    width: 440px;
+    height: 160px;
+    background-color: #FFFFFF;
+    left: 20%;
+    top: 15%;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+}
+
+.billboard h2{
+    font-size: 28px;
+    line-height: 72px;
+    font-weight: bold;
+}
+.billboard p{
+    font-size: 16px;
+    line-height: 24px;
+    white-space: 0;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F8F9FB;
+    height: 224px;
+    padding-top: 70px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.sponsor span{
+    display: block;
+    opacity: 0.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.items{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15%;
+    margin-bottom: 40px;
+}
+
+.category h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards div{
+    margin: 1.5% 1%;
+}
+.cards img{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cards img:hover{
+    transform: scale(1.05);
+    transition: transform 150ms cubic-bezier(0,0,.38,.9);
+}
+
+.cards span{
+    font-size: 16px;
+    font-weight: bold;
 }
