@@ -52,6 +52,7 @@ a:hover{
     align-items: center;
     margin-right: 20px;
 }
+
 .login{
     margin-left: 50px;
 }
@@ -302,20 +303,22 @@ table span{
     padding-right: 60px;
 }
 
+.dropbox{
+    height: 10vh;
+}
+
 .dropbox_list{
+    display: none !important;
     position: absolute;
-    display: none;
     flex-direction: column;
-    z-index: 105;
     width: 300px;
     height: 600px;
     top: 75px;
     left: max(5%, 130px);
     background-color: #FFFFFF;
-    padding: 5px 30px 0 10px;
+    padding: 5px 30px 0 15px;
     outline: 1px solid rgba(0,0,0,.08);
     box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
-    transition-duration: 300ms;
 }
 
 .dropbox_list div{
@@ -325,14 +328,19 @@ table span{
 }
 
 .dropbox_list a{
-    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .dropbox_list svg{
     fill: #000;
     scale: 0.5;
     opacity: 0.8;
+}
+
+.dropbox:hover .dropbox_list{
+    display: flex !important;
 }
