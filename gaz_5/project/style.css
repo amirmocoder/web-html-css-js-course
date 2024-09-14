@@ -15,7 +15,7 @@ body{
     letter-spacing: -0.025em;
 }
 
-input:focus{
+input:focus {
     outline: 0;
 }
 
@@ -300,4 +300,38 @@ table span{
     background-color: #2D2F31;
     color: #fff;
     padding-right: 60px;
+}
+
+.dropbox_list{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    z-index: 105;
+    width: 300px;
+    height: 600px;
+    top: 75px;
+    left: max(5%, 130px);
+    background-color: #FFFFFF;
+    padding: 5px 30px 0 10px;
+    outline: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+}
+
+.dropbox_list div{
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+
+.dropbox_list a{
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropbox_list svg{
+    fill: #000;
+    scale: 0.5;
+    opacity: 0.8;
 }
