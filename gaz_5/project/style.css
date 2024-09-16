@@ -117,7 +117,8 @@ a:hover{
 .billboard{
     position: absolute;
     z-index: 101;
-    width: 440px;
+    width: 25%;
+    min-width: 320px;
     height: 160px;
     background-color: #FFFFFF;
     left: 20%;
@@ -158,9 +159,14 @@ a:hover{
 
 .items{
     display: flex;
-    width: 60%;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.items img{
+    margin: 5px 1%;
 }
 
 .category{
@@ -252,6 +258,7 @@ table span{
 
 .trailer{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -260,10 +267,11 @@ table span{
 
 .trailer img{
     margin-right: 5%;
+    margin-bottom: 50px;
 }
 
 .text-box{
-    max-width: 350px;
+    width: 350px;
     text-align: left;
     display: flex;
     flex-direction: column;
