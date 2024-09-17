@@ -1,0 +1,25 @@
+@media screen and (max-width: 1560px){
+    .login{
+        display: none;
+    }
+    .header {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 1048px){
+    .menu .title{
+        display: none;
+    }
+}
+@media screen and (max-width: 760px){
+    .sponsor{
+        height: 300px;
+    }
+    .links{
+        height: 600px;
+    }
+    table h5, table h4{
+        font-size: 16px;
+    }
+}
