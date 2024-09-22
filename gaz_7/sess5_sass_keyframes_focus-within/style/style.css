@@ -208,24 +208,6 @@ small,
   padding: 24px 0;
 }
 
-@-webkit-keyframes labelAnimated {
-  0% {
-    top: 12px;
-    color: red;
-    left: 48px;
-  }
-  50% {
-    top: -12px;
-    left: 48px;
-    color: blue;
-  }
-  100% {
-    top: -12px;
-    left: 8px;
-    color: green;
-  }
-}
-
 @keyframes labelAnimated {
   0% {
     top: 12px;
@@ -275,10 +257,8 @@ small,
   padding-left: 40px;
 }
 .form .input__group:focus-within label {
-  -webkit-animation-name: labelAnimated;
-          animation-name: labelAnimated;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-name: labelAnimated;
+  animation-duration: 0.4s;
   top: -12px;
   left: 8px;
   background-color: white;
