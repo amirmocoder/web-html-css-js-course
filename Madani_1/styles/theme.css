@@ -15,7 +15,6 @@
   --sizing-5: 2rem;
   --sizing-6: 2.2rem;
 
-  --container: 100%;
   --gap: 1.25rem;
 
   --font-system:  "Poppins", system-ui, sans-serif;
@@ -41,7 +40,7 @@ img{
 }
 
 .container{
-  max-width: var(--container);
-  margin-inline: auto;
+  max-width: 100%;
+  margin: 0 auto;
   padding-inline: var(--sizing-3);
 }
